@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.2" %}
 
 package:
   name: chemfiles
@@ -10,8 +10,8 @@ build:
 
 requirements:
   run:
-    - chemfiles-lib ==0.6.2
-    - chemfiles-python ==0.6.0
+    - chemfiles-lib 0.7.*
+    - chemfiles-python 0.7.*
 
 test:
   commands:
