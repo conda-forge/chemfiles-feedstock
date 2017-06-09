@@ -1,11 +1,11 @@
-{% set version = "0.7.2" %}
+{% set version = "0.7.4" %}
 
 package:
   name: chemfiles
   version: {{ version }}
 
 build:
-  skip: true  # [win]
+  skip: true  # [win and py2k]
   number: 0
 
 requirements:
@@ -20,7 +20,7 @@ test:
     - python -c "import chemfiles; chemfiles.Atom('H')"
 
 about:
-  home: http://chemfiles.github.io
+  home: http://chemfiles.org
   license: MPL-v2.0
   summary: Modern library for chemistry file reading and writing
 
