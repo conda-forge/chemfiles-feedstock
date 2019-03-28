@@ -1,4 +1,4 @@
-{% set version = "0.7.4" %}
+{% set version = "0.9.1" %}
 
 package:
   name: chemfiles
@@ -10,8 +10,8 @@ build:
 
 requirements:
   run:
-    - chemfiles-lib 0.7.*
-    - chemfiles-python 0.7.*
+    - chemfiles-lib 0.9.*
+    - chemfiles-python 0.9.*
 
 test:
   commands:
@@ -20,9 +20,11 @@ test:
     - python -c "import chemfiles; chemfiles.Atom('H')"
 
 about:
-  home: http://chemfiles.org
-  license: MPL-v2.0
+  home: https://chemfiles.org
+  license: BSD-3-Clause
   summary: Modern library for chemistry file reading and writing
+  doc_url: https://chemfiles.org/chemfiles/{{ version }}/
+  dev_url: https://github.com/chemfiles/chemfiles
 
 extra:
   recipe-maintainers:
