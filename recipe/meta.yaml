@@ -1,16 +1,17 @@
-{% set version = "0.10.2" %}
+{% set version = "0.10.4" %}
 
 package:
   name: chemfiles
   version: {{ version }}
 
 build:
+  skip: true  # [python_impl == 'pypy']
   number: 0
 
 requirements:
   run:
-    - chemfiles-lib >=0.10.1,<0.11
-    - chemfiles-python >=0.10.1,<0.11
+    - chemfiles-lib ==0.10.4
+    - chemfiles-python ==0.10.4
 
 test:
   commands:
